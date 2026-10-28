@@ -1,4 +1,4 @@
-# ORDER BY TURA V4 — Website đặt hộ Taobao (Frontend Demo)
+# ORDER BY TURA V5 — Website đặt hộ Taobao (Frontend Demo)
 
 Bản demo tương tác gồm **website khách hàng** và **admin quản lý đơn hàng**, chưa có backend, thanh toán thật hay kết nối Taobao API.
 
@@ -7,6 +7,15 @@ Bản demo tương tác gồm **website khách hàng** và **admin quản lý đ
 - Giải nén tất cả file vào cùng một thư mục.
 - Mở `index.html` trên Chrome/Edge/Safari hoặc chạy `python -m http.server 8000` rồi truy cập `http://localhost:8000`.
 - Không cần cài Node.js, không cần build, không cần máy chủ dữ liệu.
+
+## Responsive V5 & giá quy đổi
+
+- `responsive-v5.css` là lớp responsive áp dụng cho **toàn bộ web**: landing, giỏ hàng, đơn hàng, chi tiết, hướng dẫn, form, popup, dashboard, danh sách đơn, khách hàng, cấu hình admin.
+- Layout tự thích ứng ở các nhóm 320–479, 480–767, 768–1099, 1100–1599, 1600–2399 và từ 2400px. Trên desktop rộng, `.shell` tăng từ 1200px lên 1760px (tới 2000px trên ultrawide).
+- Admin trên điện thoại hiển thị danh sách đơn dạng thẻ, 4 menu luôn có thể bấm, không bắt buộc kéo ngang bảng.
+- **Mỗi giá sản phẩm theo ¥** đi kèm số tiền **≈ VND**, sử dụng `settings.rate` (mặc định 3.700đ/¥), cập nhật khi Admin thay tỷ giá. Hiển thị tại sản phẩm mẫu, popup nhập sản phẩm, giỏ hàng, chi tiết đơn của khách và Admin.
+- Trong popup thêm sản phẩm, số tiền VND thay đổi ngay khi chỉnh giá ¥ hoặc số lượng.
+- Giá đổi ≈ VND chỉ là **tiền hàng ước tính**, không phải giá cuối cùng; phí vận chuyển và dịch vụ được tính riêng trong giỏ hàng, báo giá cuối do Admin xác nhận.
 
 ## Nhận diện thương hiệu
 
@@ -47,5 +56,16 @@ Tất cả liên kết chỉ lưu trong trình duyệt demo hiện tại. Không
 - Website trình diễn frontend, không phải dịch vụ nhận đơn thực.
 
 ## Kiểm thử
+
+V5 đã kiểm tra trên Chromium tại 12 viewport (320, 375, 390, 480, 768, 820, 1024, 1280, 1440, 1920, 2048, 2560px): tổng cộng **96 kiểm tra bố cục** qua 8 màn hình chính, không phát hiện tràn ngang. Kiểm tra thêm trang chi tiết đơn và modal ở 7 độ rộng không thấy tràn ngang. Kiểm tra thao tác xem sản phẩm mẫu → quy đổi VND → sửa số ¥ → thêm vào giỏ → Admin đổi tỷ giá → quy đổi trang chủ được cập nhật, không có lỗi JavaScript trong kịch bản này.
+
+### Kết quả tham chiếu
+
+- `v5-home-2048.png`: desktop rộng.
+- `v5-home-390.png`: điện thoại.
+- `v5-admin-2048.png` và `v5-admin-390.png`: Admin trên hai loại màn hình.
+- `tura-v5-responsive-review.gif`: slideshow ảnh chụp giao diện mới để duyệt thiết kế, không phải bản ghi thao tác người dùng.
+
+
 
 Đã test qua trình duyệt headless Chromium với các màn hình desktop, tablet, mobile (không tràn ngang). Đã thực hiện flow end-to-end từ gửi yêu cầu tới **Hoàn tất**, gồm Admin gửi báo giá, khách đồng ý, cập nhật thanh toán và các mốc vận chuyển; không có lỗi JavaScript trong luồng đã chạy. GIF `tura-v4-flow-review.gif` có 10 cảnh từ ảnh chụp màn hình trình duyệt. Chưa test tích hợp hệ thống thật vì chưa có backend.
