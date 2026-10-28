@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 680" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x2="0.7" y2="1"><stop stop-color="#fffaf2"/><stop offset=".55" stop-color="#fff0df"/><stop offset="1" stop-color="#ffdab4"/></linearGradient>
+ <linearGradient id="shop" x2="0" y2="1"><stop stop-color="#ffae66"/><stop offset="1" stop-color="#f28c46"/></linearGradient>
+ <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#ffe5cb"/><stop offset="1" stop-color="#ffd4a9"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="13"/></filter>
+ <filter id="cloud"><feGaussianBlur stdDeviation="1.5"/></filter>
+</defs>
+<rect width="1600" height="680" fill="url(#sky)"/>
+<!-- Sunny haze; subtle and localized, no halo around the mascot. -->
+<path d="M0 360C290 250 540 390 750 330S1220 225 1600 330V680H0Z" fill="#fff4e4" opacity=".48"/>
+<g opacity=".4" fill="#fff" filter="url(#cloud)">
+  <ellipse cx="190" cy="96" rx="120" ry="36"/><ellipse cx="258" cy="74" rx="76" ry="57"/><ellipse cx="390" cy="133" rx="103" ry="31"/>
+  <ellipse cx="1100" cy="86" rx="130" ry="43"/><ellipse cx="1196" cy="61" rx="88" ry="60"/><ellipse cx="1288" cy="114" rx="96" ry="29"/>
+</g>
+<!-- Traditional layered rooflines in the distance -->
+<g opacity=".16" fill="#cd7547">
+  <path d="M1020 325v-79h170v79Zm-32-80q22 5 48-17h130q20 22 56 17l-23 16H1010Z"/>
+  <path d="M1260 312V209h205v103Zm-43-105q50 10 65-28h164q15 30 66 28l-30 20h-231Z"/>
+  <path d="M1430 315v-52h170v52Zm-31-53q38 4 53-20h128q12 17 47 20l-12 14h-202Z"/>
+</g>
+<!-- Taobao marketplace storefront shapes, subtle so text stays primary -->
+<g opacity=".31">
+ <rect x="1297" y="292" width="305" height="270" rx="13" fill="url(#shop)"/>
+ <path d="M1261 302l45-64h278l54 64-33 13h-323Z" fill="#db7543"/>
+ <path d="M1302 243q35 3 50-33h198q12 29 45 33" fill="none" stroke="#bb6037" stroke-width="12" stroke-linecap="round"/>
+ <rect x="1336" y="363" width="93" height="150" rx="9" fill="#fff0de"/>
+ <rect x="1454" y="363" width="109" height="150" rx="9" fill="#fff1dd"/>
+ <rect x="1348" y="377" width="69" height="110" rx="5" fill="#eab084"/>
+ <rect x="1467" y="377" width="84" height="110" rx="5" fill="#e7b58e"/>
+ <path d="M1454 280h96" stroke="#fff1df" stroke-width="9" stroke-linecap="round" opacity=".75"/>
+</g>
+<!-- Warm street surface and parcels -->
+<path d="M0 559Q430 524 823 568T1600 559V680H0Z" fill="url(#ground)" opacity=".65"/>
+<g opacity=".16" fill="#e89654">
+ <path d="M1178 514l90-38 70 40-88 41Z"/><path d="M1178 514v70l72 38v-65Z"/><path d="M1250 557l88-41v70l-88 36Z"/>
+ <path d="M1450 565l60-31 55 27-60 27Z"/><path d="M1450 565v42l55 30v-49Z"/><path d="M1505 588l60-27v47l-60 29Z"/>
+</g>
+<!-- Decorative strings of small lanterns / travel route -->
+<path d="M1005 114q230 113 506-7" fill="none" stroke="#f0a45d" stroke-dasharray="8 14" stroke-width="3" opacity=".44"/>
+<g opacity=".35">
+ <path d="M1385 36v69m-6-27h12" stroke="#bf713d" stroke-width="3"/>
+ <ellipse cx="1385" cy="108" rx="19" ry="24" fill="#f0793d"/><path d="M1371 107h28M1385 87v40" stroke="#ffcc8c" stroke-width="2"/>
+ <path d="M1520 34v52" stroke="#bf713d" stroke-width="3"/><ellipse cx="1520" cy="101" rx="15" ry="20" fill="#f0793d"/>
+</g>
+<g opacity=".45" fill="#f4ab55"><path d="M867 118l8 17 18 4-18 7-8 16-8-16-18-7 18-4Z"/><path d="M1528 176l5 11 11 5-11 4-5 12-5-12-11-4 11-5Z"/></g>
+</svg>

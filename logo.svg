@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="140" viewBox="0 0 400 140" role="img" aria-labelledby="title desc">
+<title id="title">ORDER BY TURA</title><desc id="desc">Logo chữ ký Tura, gấu trúc nhỏ và nét gạch chân màu cam</desc>
+<g transform="translate(7 15)">
+ <g transform="translate(0 17)">
+  <path d="M13 25C3 8 19 0 31 13L43 21 53 12C67 1 80 12 71 28" fill="#242220"/>
+  <ellipse cx="43" cy="49" rx="39" ry="37" fill="#fffdf8" stroke="#242220" stroke-width="4"/>
+  <ellipse cx="24" cy="46" rx="12" ry="17" transform="rotate(23 24 46)" fill="#242220"/><ellipse cx="62" cy="46" rx="12" ry="17" transform="rotate(-23 62 46)" fill="#242220"/>
+  <circle cx="29" cy="43" r="4.2" fill="white"/><circle cx="57" cy="43" r="4.2" fill="white"/>
+  <path d="M37 62Q43 66 49 62Q48 56 43 56Q38 56 37 62Z" fill="#242220"/>
+  <path d="M43 64v5m0 0q-6 6-11-1m11 1q6 6 11-1" stroke="#242220" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <path d="M13 30q29-19 59 0" stroke="#ff6900" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M60 21q10-6 14-13" stroke="#ff6900" stroke-width="5" fill="none" stroke-linecap="round"/>
+ </g>
+ <text x="101" y="43" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="800" letter-spacing="5" fill="#34302c">ORDER BY</text>
+ <text x="96" y="103" font-family="Arial Black,Arial,Helvetica,sans-serif" font-size="73" font-weight="900" letter-spacing="-5" fill="#ff6900">TURA</text>
+ <path d="M109 114C172 130 277 128 369 111" fill="none" stroke="#ff6900" stroke-width="6" stroke-linecap="round"/>
+ <path d="M365 110l13-8-4 17" fill="#ff6900"/>
+</g></svg>
